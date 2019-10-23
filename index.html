@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+
+
+
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/css/mdb.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="./estilo.css">
+
+</head>
+
+<body>
+
+<div class="root">
+<div class="header container-fluid">
+<h1><strong>PROXY CHECKER</strong></h1>
+</div>
+<div class="info1">
+<div class="info2">
+<h6>Response <i class="fas fa-bolt"></i> 3S</h6>
+</div>
+
+</div> 
+<div class="checker">
+<textarea rows="50" cols="50" placeholder="12.345.6020.061:8080" id="tar"></textarea>
+<div class="proxy">
+<h6 style="color:blue;"> INGRESADOS: <strong id="prxi">0  </strong> </h6>
+<h6 style="color:green;"> VIVOS: <strong id="prxl">0  </strong> </h6>
+<h6 style="color:red;"> MUERTOS: <strong id="prxd">0  </strong> </h6>
+</div>
+<div class="botones">
+<button class="start"> <i class="fas fa-check-circle"></i>  STAR</button>
+<button class="stop">  <i class="fas fa-power-off"></i> STOP</button>
+</div>
+
+</div>
+<div class="container-pb">
+<div class="progress md-progress" style="height: 30px">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+</div>
+</div>
+<div class="result">
+<div class="pan live">
+<p id="text"><button class="resetbtn">RESET </button><strong> Lives: </strong></p>
+<hr>
+<div class="pan2">
+<p id="tx-live"></p>
+</div>
+</div>
+</div>
+
+
+<div class="result">
+<div class="pan live">
+<p id="text"><button class="resetbtn">RESET </button><strong> Dead: </strong></p>
+<hr>
+<div class="pan2">
+<p id="tx-dead"></p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/js/mdb.min.js"></script>
+<script src="./gate1.js"></script>
+</body>
+
+</html>
