@@ -27,3 +27,19 @@ document.frm.sockslist.value="";
 function isprox(inpx){
 if(inpx[0].split(":").lenght == 2){ retrn true}else{ return false }
 }
+
+// For requuest
+
+function check(jdat, url){ // Send parameters: data and url to the function & obtain async response
+  return new Promise((resolve, reject) => {
+    axios.post('http://40.121.181.97:8080/adobe',jdat)
+  .then(function (response) {
+    // handle success
+    resolve(response);
+  })
+  .catch(function (error) {
+    // handle error
+    reject(error);
+  })
+  });
+}
