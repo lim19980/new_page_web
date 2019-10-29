@@ -23,3 +23,6 @@ document.frm.sockslist.value="";
 
 
 }
+function pad(d) {
+    return (d < 10) ? '0' + d.toString() : d.toString();
+}
